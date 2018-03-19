@@ -7,7 +7,7 @@ After=network.target
 Type=simple
 User=pi
 Environment=NODE_ENV=production
-ExecStart=/usr/bin/node /opt/tavernbot/bot.js
+ExecStart=/usr/bin/npm start --prefix /path/to/tavernbot
 Restart=on-failure
 RestartSec=60s
 #Only available in systemd 236+
